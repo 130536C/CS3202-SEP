@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Highway Express -Dash board</title>
+	<style>
+		.wrapper {
+			text-align: center;
+		}
+
+		.button {
+			position: absolute;
+			top: 50%;
+		}
+	</style>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="busadmin_index.html">Highway Express</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> System Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="busadmin_index.html"><i class="	glyphicon glyphicon-home"></i> Home</a>
+                    </li>
+					
+                    <li >
+                        <a href="javascript:;" data-toggle="collapse" data-target="#bustimetable"><i class="glyphicon glyphicon-menu-hamburger"></i> Bus time table <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="bustimetable" class="collapse">
+                            <li>
+                                <a href="busadmin_viewbustimetable.html"><i class="glyphicon glyphicon-tasks"></i> view bus time table</a>
+                            </li>
+                            <li  >
+                                <a href="busadmin_updatebustimetable.html"><i class="glyphicon glyphicon-edit"></i> update bus time table</a>
+                            </li>
+							<li class="active">
+                                <a href="busadmin_updateroutetimetable.html"><i class="glyphicon glyphicon-edit"></i> update route time table</a>
+                            </li>
+                        </ul>
+                    </li>
+					 <li >
+                        <a href="busadmin_notifications.html"><i class="	glyphicon glyphicon-tags"></i> Notifications</a>
+                    </li>
+					<li >
+                        <a href="busadmin_busschedule.html"><i class="	glyphicon glyphicon-road"></i> Bus schedule</a>
+                    </li>
+					<li >
+                        <a href="javascript:;" data-toggle="collapse" data-target="#updatenew"><i class="glyphicon glyphicon-menu-hamburger"></i> Add new<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="updatenew" class="collapse">
+                            <li>
+                                <a href="busadmin_addnewbusadmin.html"><i class="glyphicon glyphicon-user"></i> Bus admin</a>
+                            </li>
+                            <li>
+                                <a href="busadmin_addnewbustimekeeper.html"><i class="	glyphicon glyphicon-user"></i> Bus time keeper</a>
+                            </li>
+							<li>
+                                <a href="busadmin_addnewbusdriver.html"><i class="	glyphicon glyphicon-user"></i> Bus /Bus Driver</a>
+                            </li>
+							<li>
+                                <a href="busadmin_addnewbusroute.html"><i class="	glyphicon glyphicon-road"></i> Bus route</a>
+                            </li>
+							<li>
+                                <a href="busadmin_addnewbusstation.html"><i class="glyphicon glyphicon-map-marker"></i> Bus station</a>
+                            </li>
+                        </ul>
+                    </li>
+					<li >
+                        <a href="javascript:;" data-toggle="collapse" data-target="#update"><i class="glyphicon glyphicon-menu-hamburger"></i> View and Update<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="update" class="collapse">
+                            <li>
+                                <a href="busadmin_viewbusadmin.html"><i class="glyphicon glyphicon-user"></i> Bus admin</a>
+                            </li>
+                            <li>
+                                <a href="busadmin_viewbustimekeeper.html"><i class="	glyphicon glyphicon-user"></i> Bus time keepers</a>
+                            </li>
+							<li>
+                                <a href="busadmin_viewbusdriver.html"><i class="	glyphicon glyphicon-user"></i> Buses /Bus Drivers</a>
+                            </li>
+							<li>
+                                <a href="busadmin_viewbusroute.html"><i class="	glyphicon glyphicon-road"></i> Bus routes</a>
+                            </li>
+							<li>
+                                <a href="busadmin_viewbusstation.html"><i class="glyphicon glyphicon-map-marker"></i> Bus stations</a>
+                            </li>
+                        </ul>
+                    </li>
+					 <li >
+                        <a href="busadmin_setting.html"><i class="glyphicon glyphicon-cog"></i> Setting</a>
+                    </li>
+					<li  class="active">
+                        <a href="busadmin_contact.html"><i class="		glyphicon glyphicon-share"></i> Contact </a>
+                    </li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Contact us
+                            <small>support centre</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="glyphicon glyphicon-home"></i>  <a href="busadmin_index.html"> Home</a>
+                            </li>
+                            <li class="active">
+                                <i class="glyphicon glyphicon-share"></i> Contact Us
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+  <!-- Content Row -->
+        <div class="row">
+            <!-- Map Column -->
+            <div class="col-md-8">
+                <!-- Embedded Google Map -->
+                <iframe width="100%" height="235px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.7776754641077!2d79.89958941431767!3d6.796882321811559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae245416b7f34b5%3A0x7bd32721ab02560e!2sUniversity+of+Moratuwa!5e0!3m2!1sen!2slk!4v1465579983359"></iframe>
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-md-4">
+                <h3>Contact Details</h3>
+                <p>
+                    Unverisity of Moratuwa<br>Department of Computer Science and Engineering<br>
+                </p>
+                <p><i class="fa fa-phone"></i> 
+                    <abbr title="Phone">P</abbr>: (0112) 100-1010</p>
+                <p><i class="fa fa-envelope-o"></i> 
+                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">highwayexpress@highwayexpress.com</a>
+                </p>
+                <p><i class="fa fa-clock-o"></i> 
+                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+ <!-- Contact Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Send us a Message</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.row -->         
+        </div>
+            <!-- /.container-fluid -->
+
+    </div>
+        <!-- /#page-wrapper -->
+
+  
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
