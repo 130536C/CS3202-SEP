@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<style>
+		.wrapper {
+			text-align: center;
+		}
+
+		.button {
+			position: absolute;
+			top: 50%;
+		}
+	</style>
+	
+    <title>Highway Express -Dash board</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="passenger_index.html">Highway Express</a>
+            </div>
+            <!-- Top Menu Items -->
+           
+                   
+            
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li >
+                        <a href="passenger_index.html"><i class="glyphicon glyphicon-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="passenger_topbusroute.html"><i class="glyphicon glyphicon-road"></i> Top bus routes</a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> bus services and stations <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="passenger_busServices.html"> <i class="fa fa-bus"></i> Bus services</a>
+                            </li>
+                            <li>
+                                <a href="passenger_busStations.html"> <i class="glyphicon glyphicon-map-marker"></i> Bus stations</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="passenger_shareExpirience.html"><i class="fa fa-share-alt"></i> share Experiences </a>
+                    </li>
+                    <li>
+                        <a href="passenger_aboutUs.html"><i class="glyphicon glyphicon-phone-alt"></i> about us </a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+               <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Search Bus services
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="glyphicon glyphicon-home"></i>  <a href="passenger_index.html"> Home</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-bus"></i> Bus services
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+	<form name="mainSearchForm" class="" method="post" ">
+		<div class="jumbotron">
+                    
+
+			<div class="col-md-6" style="margin-top:20px">
+				<div class="">
+				<h3>
+				<i class="fa fa-map-marker input-icon"></i>
+                <label class="input-name">Starting from</label>									
+					<select>
+					<option value="None">Select destination</option>
+					  <option value="Akuressa">Akuressa</option>
+					  <option value="Colombo_fort">Colombo fort</option>
+					  <option value="Deiyandara">Deiyandara</option>
+					  <option value="Deniyaya">Deniyaya</option>
+					  <option value="Galle">Galle</option>
+					  <option value="Gampaha">Gampaha</option>
+					  <option value="Hakmana">Hakmana</option>
+					  <option value="Kaduwela">Kaduwela</option>
+					  <option value="Kadawatha">Kadawatha</option>
+					  <option value="Kandy">Kandy</option>
+					  <option value="katharagama">Katharagama</option>
+					  <option value="Panadura">Panadura</option>
+					  <option value="Piliyandala">Piliyandala</option>
+					  <option value="Matara">Matara</option>
+					  <option value="Maharagama">Maharagama</option>
+					  <option value="Negambo">Negambo</option>
+					  <option value="Tangalle">Tangalle</option>					  
+					</select>
+						</h3>
+				</div>
+			</div>
+			<div class="col-md-6" style="float:left; margin-top:20px">
+				<div class="form-group form-group-lg form-group-icon-left" ng-class="{&#39;form-correct&#39;: (searchFormData.end!=&#39;&#39;)}">
+					<h3>
+					<i class="fa fa-map-marker input-icon"></i>
+					<label class="input-name">Going to</label>									
+						<select>
+							<option value="None">Select destination</option>
+						  <option value="Akuressa">Akuressa</option>
+						  <option value="Colombo_fort">Colombo fort</option>
+						  <option value="Deiyandara">Deiyandara</option>
+						  <option value="Deniyaya">Deniyaya</option>
+						  <option value="Galle">Galle</option>
+						  <option value="Gampaha">Gampaha</option>
+						  <option value="Hakmana">Hakmana</option>
+						  <option value="Kaduwela">Kaduwela</option>
+						  <option value="Kadawatha">Kadawatha</option>
+						  <option value="Kandy">Kandy</option>
+						  <option value="katharagama">Katharagama</option>
+						  <option value="Panadura">Panadura</option>
+						  <option value="Piliyandala">Piliyandala</option>
+						  <option value="Matara">Matara</option>
+						  <option value="Maharagama">Maharagama</option>
+						  <option value="Negambo">Negambo</option>
+						  <option value="Tangalle">Tangalle</option>	
+						</select>
+						<h3>
+				</div>
+			</div>
+			
+			
+			
+			<div class="wrapper">
+				<button class="btn btn-primary btn-lg" type="submit" align ="center">SEARCH FOR BUSES</button>
+			</div>
+			<p>
+
+
+
+
+
+
+
+
+
+			</p>
+		</div>
+		
+	</form>
+            
+			
+		
+					<!-- bus details : bus 1 -->
+						<div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">ABC highway express</h3>
+                            </div>
+                            <div class="panel-body">
+								 <div class="col-sm-4" align="left">
+									<img class="img-thumbnail" src="images\buses\bus1.gif" alt="">
+									<p> <b> ABC Highway Express </b></p>
+									<p>Colombo - Matara</p>
+								 </div>
+								 <!-- leaving info div -->
+								 <div class ="col-sm-4" align="left">
+									<p><b>Bus route: </b> Colombo - Matara</p>
+									<p><b>Contact no: </b> 07x xx xx xxx</p>
+									<p><b>Address: </b> Matara</p>
+									<p><b>Seats: </b> 49 seats</p>
+								 
+								 
+								 </div>
+								 <!-- arrive to next stop info div -->
+								 <form name="writeReviewform"   action = "passenger_busReiviews.html" class="" method="post" ">
+									 <div class ="col-sm-4" align="left">
+										<button class="btn btn-lg btn-warning" type="submit" align ="center">Write review</button>
+									 
+									 </div>
+                                </form>
+                            </div>
+                        </div>
+					<!-- bus 1 end  -->
+							<footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.0
+                </div>
+                <strong>Copyright &copy; 2016 <a href="http://facebook.com">Highway Express</a>.</strong> All rights reserved.
+            </footer>
+				
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</html>
+</body>
+
+</html>
