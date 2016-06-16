@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Highway Express -Dash board</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- Custom styles for this template -->
+    <link href="css/styletime.css.css" rel="stylesheet">
+    <link href="css/timepicki.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="bustimekeeper_index.html">Highway Express</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Bus Time keeper<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li >
+                        <a href="bustimekeeper_index.html"><i class="glyphicon glyphicon-home"></i> Home</a>
+                    </li >
+                    
+					<li class="active" >
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-list-alt"></i> Bus time table<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                 <a href="bustimekeeper_timetable.html"><i class="glyphicon glyphicon-list-alt"></i> view Bus time table</a>
+                            </li>
+                            <li>
+                                <a href="bustimekeeper_timetableupdate.html"><i class="glyphicon glyphicon-pencil"></i> update bus time table</a>
+                            </li>
+							
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bustimekeeper_notifications.html"><i class="glyphicon glyphicon-envelope"></i> Notifications</a>
+                    </li>
+                    <li>
+                        <a href="bustimekeeper_searchschedule.html"><i class="glyphicon glyphicon-search"></i> Search bus schedule</a>
+                    </li>
+                    <li>
+                        <a href="bustimekeeper_setting.html"><i class="glyphicon glyphicon-cog"></i> Setting</a>
+                    </li>
+                   <li >
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-pencil"></i> Update status <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="bustimekeeper_updatestatus.html">bus onboard call </a>
+                            </li>
+                            <li>
+                                <a href="bustimekeeper_updatestatus_arrivrbus.html">Bus arrival status</a>
+                            </li>
+							<li>
+                                <a href="bustimekeeper_updatestatus_leavebus.html">Bus leave status</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="bustimekeeper_contactus.html"><i class="glyphicon glyphicon-comment"></i> contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+           
+        
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+			
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Update Bus Time Table
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="glyphicon glyphicon-home"></i>  <a href="bustimekeeper_index.html"> Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="glyphicon glyphicon-pencil"></i> Update Bus time table
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+           		<div class="container">
+					<div class="col-sm-11">
+						<div class="alert alert-info">
+							<strong>advice!</strong> After add all the buses to the schedule, please review below time table and save it.
+						</div>
+						<div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Bus route : bus schedule update</h3>
+                            </div>
+							<form name="sentMessage" id="contactForm" novalidate>
+                            <div class="panel-body">
+                                <div class ="col-sm-5">
+									<div style="float:left; margin-top:20px">
+									<div class="" ng-class="{&#39;form-correct&#39;: (searchFormData.date!=&#39;&#39; &amp;&amp; mainSearchForm.date.$dirty)}">
+										<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+										
+										<label  class="input-name">Select schedule Date</label>
+										<input  type="date"/>
+										</div>
+									</div>
+									<p class="help-block text-danger"></p>
+									
+									<div style="float:left; margin-top:20px">
+									<span class = "glyphicon glyphicon-road" aria-hidden="true"></span>
+									<label> Select the bus route</label>
+									</div>
+									<select class="form-control">
+										<option value="0">--- select bus route ---</option>
+										<option value="1">Matara - Maharagama</option>
+										<option value="2">Matara - kaduwela</option>
+										<option value="3">Matara - kadawatha</option>
+										<option value="4">Matara - panadura</option>
+										<option value="2">Matara - Piliyandala</option>
+										<option value="3">Matara - Kandy</option>
+										<option value="4">Matara - Negambo</option>
+									</select>
+									<p class="help-block text-danger"></p>
+									<div style="float:left; margin-top:20px">
+									<span class = "fa fa-bus" aria-hidden="true"></span>
+									<label> Select the bus</label>
+									</div>
+									
+									<select class="form-control">
+										<option value="one">--- select bus ---</option>
+										<option value="two">Bus 1</option>
+										<option value="three">Bus 2</option>
+										<option value="four">Bus 3</option>
+										<option value="five">Bus 4</option>
+									</select>
+									
+									
+								</div>
+								<form action="">
+								<p class="help-block text-danger"></p>
+								<div class="col-md-6" style="float:left; margin-top:20px">
+									<div class="" ng-class="{&#39;form-correct&#39;: (searchFormData.date!=&#39;&#39; &amp;&amp; mainSearchForm.date.$dirty)}">
+										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+										
+										<label  class="input-name">Select schedule Time</label>
+										<div class="site-wrapper-inner">
+											  <div class="inner cover indexpicker" >
+													<input id="timepicker1" type="text" name="timepicker1"/>
+
+											</div>
+
+										  </div>
+										</div>
+								</div>
+								</form>
+								<form action="">
+								<div class="col-md-6" style="float:left; margin-top:20px">
+									<div class="" ng-class="{&#39;form-correct&#39;: (searchFormData.date!=&#39;&#39; &amp;&amp; mainSearchForm.date.$dirty)}">
+										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+										
+										<label  class="input-name">Select bus onboard Time at</label>
+										<div class="site-wrapper-inner">
+											  <div class="inner cover indexpicker" >
+													<input id="timepicker2" type="text" name="timepicker2"/>
+
+											</div>
+											<!-- this action makes time set in above time picker as 1st time picker - 15 min -->
+											<form action="">
+											<input type="checkbox" name="vehicle" value="Bike">15 min before<br>
+											 
+											</form>
+										  </div>
+										</div>
+								
+								</div>	
+									</form>
+								<div class ="col-sm-5">
+									<div class="clearfix"></div>
+									<div class="col-lg-10 text-center">
+									<div id="success"></div>
+									<p class="help-block text-danger"></p>
+									<button type="submit" class="btn btn-lg btn-primary">    add to schedule     </button>
+								</div>
+
+								</div>
+								
+								</form>
+								
+								
+								
+                            </div>
+						</div>
+						<p class="help-block text-danger"></p>
+						<div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">2016.05.01 Monday : Bus route</h3>
+                            </div>
+                            <div class="panel-body">
+								<table class="table table-striped">
+									<thead>
+									  <tr>
+										
+										<th width="5%">Index</th>
+										<th width="10%" >schedule time</th>
+										<th width="10%" >Bus No.</th>
+										<th width="10%">contact person</th>
+										<th width="10%">contact no.</th>
+										<th width="10%">on board time</th>
+										<th width="10%">details</th>
+										<th width="10%"></th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>01</td>
+										<td>6.00 a.m</td>
+										<td>NA -2356</td>
+										<td>Siripala</td>
+										<td>0716036970</td>
+										<td>5.45 a.m</td>
+										<td> <a href="bustimekeeper_viewbusdetails.html"> view details</a> </td>
+										<td><form action=""><input type=submit value="Cancel bus" style="width:100%"></form></td>
+									  </tr>
+									  <tr>
+										<td>02</td>
+										<td>6.30 a.m</td>
+										<td>NB -2547</td>
+										<td>Gunapala</td>
+										<td>077165485</td>
+										<td>6.15 a.m</td>
+										<td> <a href="bustimekeeper_viewbusdetails.html"> view details</a> </td>
+										<td><form action=""><input type=submit value="Cancel bus" style="width:100%"></form></td>
+									  </tr>
+									  <tr>
+										<td>03</td>
+										<td>7.00 a.m</td>
+										<td>Nc -0012</td>
+										<td>sirisena</td>
+										<td>0754215635</td>
+										<td>6.45 a.m</td>
+										<td> <a href="bustimekeeper_viewbusdetails.html"> view details</a> </td>
+										<td><form action=""><input type=submit value="Cancel bus" style="width:100%"></form></td>
+									  </tr>
+									  <tr>
+										<td>04</td>
+										<td>8.00 a.m</td>
+										<td>NA -0214</td>
+										<td>hettiaracchi</td>
+										<td>0785421369</td>
+										<td>7.45 a.m</td>
+										<td> <a href="bustimekeeper_viewbusdetails.html"> view details</a> </td>
+										<td><form action=""><input type=submit value="Cancel bus" style="width:100%"></form></td>
+									  </tr>
+									  <tr>
+										<td>05</td>
+										<td>9.00 a.m</td>
+										<td>NA -5485</td>
+										<td>jayan</td>
+										<td>0771236548</td>
+										<td>8.45 a.m</td>
+										<td> <a href="bustimekeeper_viewbusdetails.html"> view details</a> </td>
+										<td><form action=""><input type=submit value="Cancel bus" style="width:100%"></form></td>
+									  </tr>
+									</tbody>
+									</table>
+									
+									<form action="" >
+										<div class ="col-sm-5">
+											<div class="clearfix"></div>
+											<div class="col-lg-10 text-center">
+												<div id="success"></div>
+												<p class="help-block text-danger"></p>
+												<button type="submit" class="btn btn-lg btn-primary">    Apply time table     </button>
+											</div>
+										</div>
+									</form>
+									<form action="" >
+										<div class ="col-sm-5">
+											<div class="clearfix"></div>
+											<div class="col-lg-10 text-center">
+												<div id="success"></div>
+												<p class="help-block text-danger"></p>
+												<button type="submit" class="btn btn-lg btn-primary">    Cancel and  create new    </button>
+											</div>
+										</div>
+									</form>
+									
+                            </div>
+                        </div>
+						
+						
+											
+					</div>
+            <!-- /.container-fluid -->
+
+				</div>
+        <!-- /#page-wrapper -->
+		
+				
+    </div>
+    <!-- /#wrapper -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/timepicki.js"></script>
+    <script>
+	$('#timepicker1,#timepicker2').timepicki();
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/flot-data.js"></script>
+
+</body>
+
+</html>
